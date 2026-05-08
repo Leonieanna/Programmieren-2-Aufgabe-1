@@ -28,4 +28,6 @@ if __name__ == "__main__":
     print(power_W)
     sorted_power_W = bubble_sort(power_W)
     print(sorted_power_W[::-1])
-  
+#nur wenn Datei direkt ausgeführt wird, nicht, wenn nur importiert wird. Das ist wichtig, damit die Funktion load_data auch von anderen Dateien importiert und verwendet werden kann, ohne dass der Code im if-Block automatisch ausgeführt wird.
+
+
