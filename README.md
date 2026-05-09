@@ -1,3 +1,19 @@
-# Programmieren-2-Aufgabe-1
+# Programmieren-2-Aufgabe-1: Power Curve Project
 
-Beschreibung 
+This project generates a power‑curve plot using Python and Matplotlib. 
+![Power Curve](figures\power_curve.png)
+
+The project uses **PDM** as the package and environment manager to ensure reproducible installations.
+
+---
+## Installation with PDM
+
+Make sure PDM is installed:
+
+```bash
+pip install pdm
+
+## Run the file: 
+ pdm run python power_curve.py
+
+

@@ -14,9 +14,15 @@ print(sorted_power_W[::-1])
 time = np.arange(1,1805)
 power = sorted_power_W[::-1]
 
-plt.plot(time, power, color = [0.8, 0.5, 0.9])
-plt.xlabel("time $s$")
-plt.ylabel("power $W$/$kg$")
+curve, = plt.plot(time, power, color = [0.7, 0.5, 0.95])
+plt.title("power curve")
+plt.xlabel("time [$s$]")
+plt.ylabel("power [$W$/$kg$]")
+plt.fill_between(time, power,
+                 color=curve.get_color(),
+                 alpha=0.3,
+                 zorder=curve.get_zorder() - 1)
+plt.margins(0,0)
 plt.savefig("figures\power_curve.png")
 plt.show()
 
