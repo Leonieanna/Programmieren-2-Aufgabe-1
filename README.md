@@ -1,4 +1,5 @@
 # Programmieren-2-Aufgabe-1: Power Curve Project
+(Leonie und Amelie)
 
 This project generates a power‑curve plot using Python and Matplotlib from the given data.
 ![Power Curve](figures/power_curve.png)
